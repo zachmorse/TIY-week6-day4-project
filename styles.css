@@ -10,13 +10,13 @@ body {
 
 .trackContainer {
   background-color: white;
-  height: 300px;
-  width: 200px;
+  height: 320px;
+  width: 160px;
   margin: 10px;
   padding: 1px;
 }
 
 .artwork {
-  height: 50px;
-  width: 50px;
+  height: 160px;
+  width: auto;
 }

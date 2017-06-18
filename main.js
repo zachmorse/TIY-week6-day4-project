@@ -19,12 +19,14 @@ var submitButton = document
     console.log("inputText: ", userInput);
     searchSoundCloud(userInput);
     console.log(artistID);
+    document.getElementById("searchInput").value = "";
   });
 
 // 3. Create your `fetch` request that is called after a submission
 
 function searchSoundCloud(input) {
   // "use strict";
+  document.getElementById("results").innerHTML = "";
   var url = WEBSITE + input + "/" + API;
   console.log(url);
   axios.get(WEBSITE + input + "/" + API).then(function(response) {
