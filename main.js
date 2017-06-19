@@ -53,7 +53,7 @@ function trackLister(artistTracks) {
     console.log(artistTracks[i].title);
     displayMaker();
 
-    // make a box for the track results:
+    // make a box for each track in the array:
 
     function displayMaker() {
       var trackContainer = document.createElement("div");
@@ -63,6 +63,7 @@ function trackLister(artistTracks) {
       var albumArt = document.createElement("img");
       albumArt.src = artistTracks[i].artwork_url;
       albumArt.classList.add("artwork");
+      albumArt.setAttribute("id", artistTracks[i].stream_url + API);
       trackContainer.appendChild(albumArt);
 
       var trackTitle = document.createElement("h5");
@@ -79,3 +80,7 @@ function trackLister(artistTracks) {
 }
 
 // 5. Create a way to listen for a click that will play the song in the audio play
+
+// var document.querySelector("img").addEventListener("click", e => {
+
+// })
