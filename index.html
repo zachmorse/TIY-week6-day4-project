@@ -13,20 +13,20 @@
       <h1>SoundCloud Music Search</h1>
     </header>
     <section class="player">
-      <audio class="music-player" controls="controls">
-        <source src="https://api.soundcloud.com/tracks/133883092/stream?client_id=095fe1dcd09eb3d0e1d3d89c76f5618f">
+      <audio id="music-player" controls="controls" autoplay="autoplay">
+        <source src="">
       </audio>
     </section>
-    <section class="search">
-      <form class="search-form">
-        <input type="search" id="searchInput" placeholder="Search for Artists:">
+    <section class="search ">
+      <form class="search-form ">
+        <input type="search " id="searchInput" placeholder="Search for Artists: ">
         <input type="button" id="searchButton" value="search">
       </form>
     </section>
-    <section id="results" class="results"></section>
+    <section onclick="playTrack();" id="results" class="results "></section>
   </div>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="main.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js "></script>
+  <script src="main.js "></script>
 </body>
 
 </html>

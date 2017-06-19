@@ -80,7 +80,8 @@ function trackLister(artistTracks) {
 }
 
 // 5. Create a way to listen for a click that will play the song in the audio play
-
-// var document.querySelector("img").addEventListener("click", e => {
-
-// })
+function playTrack() {
+  var songID = event.target.id;
+  var player = document.getElementById("music-player");
+  player.src = songID;
+}
