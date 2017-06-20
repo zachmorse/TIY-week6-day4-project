@@ -1,7 +1,39 @@
 body {
-  background-color: #60d9f1;
   display: flex;
   justify-content: center;
+  font-family: "Helvetica Neue";
+  background-size: 100%;
+}
+
+.page-background {
+  background: url("./pictures/cassette.jpeg");
+  filter: blur(2px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+.headerline-1 {
+  font-size: 6rem;
+  padding: 0;
+  margin: 2rem;
+  text-shadow: 1px 4px 14px grey;
+  color: #EFEFEF;
+}
+
+.headerline-2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  color: #230C0F;
 }
 
 .container {
@@ -15,14 +47,23 @@ body {
 }
 
 .trackContainer {
-  background-color: white;
-  height: 320px;
-  width: 160px;
-  margin: 10px;
-  padding: 1px;
+  background-color: #d4ddce;
+  height: 285px;
+  width: 120px;
+  margin: 5px;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px 1px grey;
 }
 
 .artwork {
-  height: 160px;
+  height: 120px;
   width: auto;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 1px grey;
+}
+
+.trackArtist {
+  text-align: center;
+  margin: 2px;
 }

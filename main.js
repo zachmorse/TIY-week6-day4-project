@@ -66,15 +66,15 @@ function trackLister(artistTracks) {
       albumArt.setAttribute("id", artistTracks[i].stream_url + API);
       trackContainer.appendChild(albumArt);
 
-      var trackTitle = document.createElement("h5");
-      trackTitle.textContent = artistTracks[i].title;
-      trackTitle.classList.add("trackTitle");
-      trackContainer.appendChild(trackTitle);
-
       var trackArtist = document.createElement("h3");
       trackArtist.textContent = artistTracks[i].user.username;
       trackArtist.classList.add("trackArtist");
       trackContainer.appendChild(trackArtist);
+
+      var trackTitle = document.createElement("h5");
+      trackTitle.textContent = artistTracks[i].title;
+      trackTitle.classList.add("trackTitle");
+      trackContainer.appendChild(trackTitle);
     }
   }
 }
