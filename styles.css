@@ -1,13 +1,11 @@
 body {
   display: flex;
   justify-content: center;
-  font-family: "Helvetica Neue";
   background-size: 100%;
 }
 
 .page-background {
   background: url("./pictures/cassette.jpeg");
-  filter: blur(2px);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -24,20 +22,57 @@ header {
 .headerline-1 {
   font-size: 6rem;
   padding: 0;
-  margin: 2rem;
+  margin: 1rem 2rem 1rem 2rem;
   text-shadow: 1px 4px 14px grey;
   color: #EFEFEF;
+  font-family: "Karla";
 }
 
 .headerline-2 {
   font-size: 1.5rem;
+  font-weight: 200;
   margin: 0;
   padding: 0;
   color: #230C0F;
+  padding-bottom: 2rem;
+  font-family: "Karla";
+}
+
+.search-form {
+  text-align: center;
+  padding-bottom: 1rem;
+  height: 32px;
+}
+
+#searchInput {
+  width: 425px;
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0px 0px 0px 10px;
+  font-family: "Karla";
+}
+
+#searchButton {
+  width: 155px;
+  font-size: 30px;
+  padding: 7rem 0px;
+  font-family: "Karla";
 }
 
 .container {
   width: 80vw;
+}
+
+.player {
+  text-align: center;
+}
+
+audio {
+  width: 600px;
+  border: 1px solid transparent;
+  box-shadow: 2px 2px 3px 1px grey;
+  border-radius: 4px;
 }
 
 .results {
@@ -47,23 +82,30 @@ header {
 }
 
 .trackContainer {
-  background-color: #d4ddce;
-  height: 285px;
-  width: 120px;
-  margin: 5px;
-  padding: 6px;
+  background-color: whitesmoke;
+  height: auto;
+  width: 150px;
+  margin: 25px;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 2px 2px 3px 1px grey;
+  text-align: center;
+  font-family: "Karla";
 }
 
 .artwork {
-  height: 120px;
+  height: 150px;
   width: auto;
   border-radius: 4px;
   box-shadow: 0px 1px 3px 1px grey;
 }
 
 .trackArtist {
-  text-align: center;
-  margin: 2px;
+  margin: 10px 2px;
+  border-bottom: 1px solid #230C0F;
+  padding-bottom: 10px;
+}
+
+.trackTitle {
+  font-size: 12px;
 }

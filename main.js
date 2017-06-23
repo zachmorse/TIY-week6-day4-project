@@ -71,7 +71,7 @@ function trackLister(artistTracks) {
       trackArtist.classList.add("trackArtist");
       trackContainer.appendChild(trackArtist);
 
-      var trackTitle = document.createElement("h5");
+      var trackTitle = document.createElement("span");
       trackTitle.textContent = artistTracks[i].title;
       trackTitle.classList.add("trackTitle");
       trackContainer.appendChild(trackTitle);

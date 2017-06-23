@@ -5,6 +5,7 @@
   <title>SoundCloud Music Search</title>
   <link rel="stylesheet" href="styles.css">
   <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Faster+One|Karla|Orbitron|Shrikhand" rel="stylesheet">
 </head>
 
 <body>
@@ -12,20 +13,21 @@
 
   <div class="container">
     <header>
-      <h1 class="headerline-1">find something new.</h1>
+      <h1 class="headerline-1">FIND SOMETHING NEW</h1>
       <h3 class="headerline-2">search soundcloud below:</h3>
     </header>
+    <section class="search">
+      <form class="search-form ">
+        <input type="search" id="searchInput" placeholder="Search for Artists: ">
+        <input type="button" id="searchButton" value="search">
+      </form>
+    </section>
     <section class="player">
       <audio id="music-player" controls="controls" autoplay="autoplay">
         <source src="">
       </audio>
     </section>
-    <section class="search ">
-      <form class="search-form ">
-        <input type="search " id="searchInput" placeholder="Search for Artists: ">
-        <input type="button" id="searchButton" value="search">
-      </form>
-    </section>
+
     <section onclick="playTrack();" id="results" class="results "></section>
   </div>
   <script src="https://unpkg.com/axios/dist/axios.min.js "></script>
