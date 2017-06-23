@@ -93,6 +93,12 @@ audio {
   font-family: "Karla";
 }
 
+.trackContainer:hover {
+  box-shadow: 4px 4px 6px 2px grey;
+  background-color: lightcoral;
+  transition-duration: 750;
+}
+
 .artwork {
   height: 150px;
   width: auto;
